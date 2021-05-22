@@ -1,0 +1,30 @@
+.form-field{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+    border: 1px solid #c58181;
+    border-radius: 10px;
+    box-shadow: honeydews;
+    background: rgb(238, 183, 183);
+    padding: 25px;
+}
+
+  .button{
+    width: 250px;
+  }
+  input{
+    width: 200px;
+    height: 20px;
+  }
+  form{
+    height: 565px;
+    width: 1240px;
+    background:white;
+  }
+//   body{
+//     background: url(../../assets/Books/lib.png) ;
+//     background-position: cover;
+// }
+    
+  
