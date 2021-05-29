@@ -1,0 +1,27 @@
+   
+    <form  class="form-main"  [formGroup]="form" >
+        <section class="form-field">
+            <div fxLayout="row" fxLayoutAlign="center center">
+                <h2 style="font-family: Georgia, 'Times New Roman', Times, serif;text-align: center; background-color: #A03037;width: 59%;text-align: center;font-size: 20px;color: white;">  ADMIN LOGIN </h2>
+            </div>
+            <br>
+            <div style="font-family: Verdana, Geneva, Tahoma, sans-serif;">
+                <label for="name">Email id</label><br>
+                <input formControlName="email" type="email"  placeholder="email">
+            </div>
+            <br>
+            <div style="font-family: Verdana, Geneva, Tahoma, sans-serif;">
+                <label for="password">Password</label><br>
+
+                <input   formControlName="password" matInput [type]="hide ? 'password' : 'text'" placeholder="enter password">
+                <button mat-icon-button matSuffix (click)="hide = !hide" [attr.aria-label]="'Hide password'"
+                    [attr.aria-pressed]="hide">
+                    <mat-icon>{{hide ? 'visibility_off' : 'visibility'}}</mat-icon>
+                </button>
+            </div>
+            <br>
+            <div fxLayout="row" fxLayoutAlign="center center">
+                <button style="background-color: #A03037;font-family:-apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;color: white;" mat-flat-button color="link" class="button" type="submit" (click)="submit()" >Submit</button>
+            </div>
+        </section>
+    </form>

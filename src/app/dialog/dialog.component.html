@@ -1,0 +1,31 @@
+ <mat-dialog-content fxLayout="column" [formGroup]="form" class="mat-typography" >
+    <mat-form-field > 
+      <mat-label>bookname</mat-label>
+      <input matInput placeholder="Enter bookname" formControlName="bookname"  required />
+  </mat-form-field>
+  <mat-form-field>
+    <mat-label>Authorname</mat-label>
+    <input matInput placeholder="Enter Author name" formControlName="Authorname" required />
+  </mat-form-field>
+  <mat-form-field>
+    <mat-label>Description</mat-label>
+    <input matInput placeholder="Enter Description" formControlName="Description" required />
+  </mat-form-field>
+  <mat-form-field>
+    <mat-label>Quantity</mat-label>
+    <input matInput placeholder="Enter quantity" formControlName="Quantity"required />
+  </mat-form-field>
+  <mat-form-field>
+    <mat-label>Price</mat-label>
+    <input matInput placeholder="Enter price" formControlName="Price" required />
+  </mat-form-field>
+  <mat-form-field>
+    <mat-label>Discount Price</mat-label>
+    <input matInput placeholder="Enter discount price" formControlName="Discount"  required />
+  </mat-form-field>
+  </mat-dialog-content>
+  
+  <mat-dialog-actions align="end">
+    <button mat-button (click)= "submit()" mat-dialog-close>Cancel</button>
+   
+  </mat-dialog-actions>

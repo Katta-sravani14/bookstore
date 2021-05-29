@@ -1,0 +1,36 @@
+.form-field{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+    border: 1px solid #4d4747;
+    border-radius: 10px;
+    box-shadow: honeydews;
+    background:whitesmoke;
+    padding: 25px;
+}
+
+  .button{
+    width: 250px;
+  }
+  input{
+    width: 200px;
+    height: 20px;
+  }
+  form{
+    height: 565px;
+    width: 1240px;
+    background:white;
+  }
+
+    @media screen and (max-width: 400px) {
+      .form-main{
+          width: 250px;
+          margin-left: 15px;
+      } 
+      .btn{
+        width: 150px;
+      }
+  }
+
+
